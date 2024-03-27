@@ -7,9 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class BookDao {
 	
@@ -51,6 +49,27 @@ public class BookDao {
 			close(pstmt);
 		}
 		return list;
+	}
+	
+	public void insertOne(Connection conn, String writer, String content) {
+		
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		try {
+			String sql = "INSERT INTO content_list(g_writer,g_content,g_reg_date) VALUES(?,?,NOW())";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, writer);
+			pstmt.setString(2, content);
+			
+			rs = pstmt.executeQuery();
+		} catch(SQLException e){
+			e.printStackTrace();
+		} finally{
+			close(rs);
+			close(pstmt);
+		}
+		
 	}
 	
 }

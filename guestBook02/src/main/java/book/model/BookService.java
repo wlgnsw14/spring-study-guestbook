@@ -16,5 +16,11 @@ public class BookService {
 		close(conn);
 		return resultList;
 	}
+
+	public void insertOne(String writer, String content) {
+		Connection conn = getConnection();
+		new BookDao().insertOne(conn, writer, content);
+		close(conn);
+	}
 	
 }

@@ -30,8 +30,16 @@ public class BookController extends HttpServlet{
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		super.doPost(req, resp);
+		// 1. 사용자가 입력한 정보 가져오기(인코딩) - controller
+		req.setCharacterEncoding("UTF-8");
+		String writer = req.getParameter("writer");
+		String content = req.getParameter("content");
+		// 2. 데이터베이스에 추가
+		// (1) 연결 (service)
+		new BookService().insertOne(writer, content); // 의존성 주입
+		// (2) 등록 (dao)
+		// 3. 목록 화면으로 전환 - controller
+		resp.sendRedirect("/book");
 	}
 	
 }
