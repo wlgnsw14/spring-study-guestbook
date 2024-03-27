@@ -1,0 +1,13 @@
+package book.model;
+
+public class BookDao {
+	
+	// 데이터베이스에서 목록 조회
+	public List<Map<String, Object>> selectList() {
+		// 1. Connction
+		// 2. PreparedStatement
+		// 3. ResultSet
+		// 4. List<Map<String, Object>>
+	}
+	
+}

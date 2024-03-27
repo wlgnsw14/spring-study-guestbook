@@ -1,0 +1,9 @@
+INDEX VERSION 1.134
+C:\crud\basic\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2878942598.index
+\guestBook02\src\main\java
+C:\crud\basic\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1208779227.index
+\guestBook01\src\main\java
+C:\crud\basic\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\462871135.index
+\guestBook02\src\main\java
+C:\crud\basic\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3715896507.index
+\guestBook01\src\main\java

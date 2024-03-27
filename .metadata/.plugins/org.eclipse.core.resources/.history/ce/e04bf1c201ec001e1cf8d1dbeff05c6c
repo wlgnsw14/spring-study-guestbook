@@ -1,0 +1,15 @@
+package book.model;
+
+import java.sql.Connection;
+import java.util.List;
+import java.util.Map;
+
+public class BookService {
+
+	// Controller와 Dao
+	// 중간자
+	public List<Map<String, Object>> selectList(){
+		Connection conn = getConnection();
+	}
+	
+}

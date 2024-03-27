@@ -1,0 +1,8 @@
+package book.model;
+
+public class BookDao {
+	
+	// 데이터베이스에서 목록 조회
+	
+	
+}

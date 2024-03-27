@@ -1,0 +1,11 @@
+package book.model;
+
+public class BookService {
+
+	// Controller와 Dao
+	// 중간자
+	public List<Map<String, Object>> selectList(){
+		
+	}
+	
+}

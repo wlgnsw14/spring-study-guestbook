@@ -1,0 +1,27 @@
+package book;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class JDBCTemplate {
+	// 데이터베이스 연결, 연결 해제
+	
+	// 1. 데이터베이스 연결
+	public static Connection getConnection() {
+		
+		Connection conn = null;
+		
+		try {
+			Class.forName("org.mariadb.jdbc.Driver");
+			String url = "jdbc:mariadb://127.0.0.1:3306/guest_book";
+			String user = "root";
+			String pw = "1234";
+			conn = DriverManager.getConnection(url,user,pw);
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		return conn;
+	}
+	
+	// 2. 데이터베이스 연결 해제
+}
