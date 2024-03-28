@@ -12,6 +12,7 @@ import com.goodee.book.model.BookService;
 import com.goodee.book.model.BookVo;
 
 
+
 @Controller
 @RequestMapping("/book")
 public class BookController {
@@ -32,4 +33,20 @@ public class BookController {
 		// 3. 화면 전환
 		return "book";
 	}
+	
+	@RequestMapping(method=RequestMethod.POST)
+	public String creatBook(BookVo vo) {
+		// 0. 작성자, 내용 정보 가져와야 함
+		// @RequestParam("g_writer")String g_writer
+		// Map<String, String> map
+		// 1. 방명록 정보 등록
+		int result = service.insertBook(vo);
+		// 2. 목록 화면 이동
+		if(result > 0) {
+			return "redirect:/book";
+		}else {
+			return "error";
+		}
+	}
+	
 }

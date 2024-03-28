@@ -13,5 +13,4 @@ public class BookVo {
 	private String g_content;
 	private Date g_reg_date;
 	
-	
 }

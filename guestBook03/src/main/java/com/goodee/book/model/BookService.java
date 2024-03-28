@@ -15,4 +15,13 @@ public class BookService {
 		return dao.selectBookList();
 	}
 	
+	// controller와 dao사이를 연결
+	// dao가 알려준 결과(int)를 controller에게 전달
+	// controller로부터 전달받은 파라미터 BookVo를 dao에게 전달
+	// 메소드명이 insertBook
+	
+	public int insertBook(BookVo vo) {
+		return dao.insertBook(vo);
+	}
+	
 }

@@ -14,16 +14,27 @@ public class BookDao {
 	@Autowired
 	private SqlSession sqlSession;
 	
+	private final String namespace = "com.goodee.book.BookMapper.";
+	
 	public List<BookVo> selectBookList(){
 		List<BookVo> resultList = new ArrayList<BookVo>();
 		
 		try {
-			resultList = sqlSession.selectList("com.goodee.book.BookMapper.selectBookList");
+			resultList = sqlSession.selectList(namespace+"selectBookList");
 		} catch(Exception e) {
-			e.printStackTrace();
 		}
 		
 		return resultList;
+	}
+	
+	public int insertBook(BookVo vo) {
+		int result = 0;
+		try {
+			result = sqlSession.insert(namespace+"insertBook",vo);
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		return result;
 	}
 	
 	
