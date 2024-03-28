@@ -7,7 +7,7 @@
   <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/guest_book_server_02-config" deployDir="wtpwebapps" hostname="localhost" id="guest_book_server_02" modulesReloadableByDefault="false" name="guest_book_server_02" runtime-id="Apache Tomcat v10.1" saveSeparateContextFiles="true" server-type="org.eclipse.jst.server.tomcat.101" server-type-id="org.eclipse.jst.server.tomcat.101" start-timeout="60" stop-timeout="15" testEnvironment="false" timestamp="3">
     <list key="modules" value0="guestBook02::org.eclipse.jst.jee.server:guestBook02::jst.web::6.0"/>
   </server>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/guest_book_server_03-config" deployDir="wtpwebapps" hostname="localhost" id="guest_book_server_03" modulesReloadableByDefault="false" name="guest_book_server_03" runtime-id="Apache Tomcat v10.1" saveSeparateContextFiles="true" server-type="org.eclipse.jst.server.tomcat.101" server-type-id="org.eclipse.jst.server.tomcat.101" start-timeout="60" stop-timeout="15" testEnvironment="false" timestamp="3">
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/guest_book_server_03-config" deployDir="wtpwebapps" hostname="localhost" id="guest_book_server_03" modulesReloadableByDefault="false" name="guest_book_server_03" runtime-id="Apache Tomcat v10.1" saveSeparateContextFiles="true" server-type="org.eclipse.jst.server.tomcat.101" server-type-id="org.eclipse.jst.server.tomcat.101" start-timeout="60" stop-timeout="15" testEnvironment="false" timestamp="4">
     <list key="modules" value0="guestBook03::org.eclipse.jst.jee.server:guestBook03::jst.web::6.0"/>
   </server>
 </servers>
